@@ -3,196 +3,240 @@ import _ from 'lodash'
 
 export default [
   {
-    time: '8:00 AM',
+    time: '11:00 AM - 11:30 AM EDT',
     tracks: [
       {
-        name: 'Registration',
-        location: 'Main Lobby, Odette Building',
-        subtitle: 'Check your names and get your schwag!',
+        name: '\'Virtual Doors\' Open',
+        // location: 'Main Lobby',
+        subtitle: 'Register and make sure your tech works.',
       }
     ]
   },
   {
-    time: '8:45 AM',
+    time: '11:30 AM - 12:00 PM EDT',
     tracks: [
       {
         name: 'Introductions',
-        location: 'Main Lobby, Odette Building',
+        subtitle: 'Introductions and instructions for the day.',
       }
     ]
   },
   {
-    time: '9:00 AM',
+    time: '12:00 PM - 12:45 PM EDT',
     tracks: [
       {
-        name: 'Keynote Speech - Bridging the AI Translation Gap',
-        location: 'Hall #1, Odette Building',
-        speaker: _.find(speakers, {id: 'amir'})
+        name: _.find(speakers, {id: 'andreysharapov'}),
+        tag: _.find(speakers, {id: 'andreysharapov'}),
+        speaker: _.find(speakers, {id: 'andreysharapov'}),
+        description:_.find(speakers, {id: 'andreysharapov'})
+      },
+      {
+        name: _.find(speakers, {id: 'chukaofili'}),
+        tag:  _.find(speakers, {id: 'chukaofili'}),
+        speaker: _.find(speakers, {id: 'chukaofili'}),
+        description:_.find(speakers, {id: 'chukaofili'})
+      },
+      {
+        name: _.find(speakers, {id: 'kylepaul'}),
+        tag:  _.find(speakers, {id: 'kylepaul'}),
+        speaker: _.find(speakers, {id: 'kylepaul'}),
+        description:_.find(speakers, {id: 'kylepaul'})
+      },
+      {
+        name: _.find(speakers, {id: 'kamalshree'}),
+        tag:  _.find(speakers, {id: 'kamalshree'}),
+        speaker: _.find(speakers, {id: 'kamalshree'}),
+        description:_.find(speakers, {id: 'kamalshree'})
+      },
+      {
+        name: _.find(speakers, {id: 'amansharma'}),
+        tag: _.find(speakers, {id: 'amansharma'}),
+        speaker: _.find(speakers, {id: 'amansharma'}),
+        description:_.find(speakers, {id: 'amansharma'})
+      },
+    ]
+  },
+  {
+    time: '12:45 PM - 1:00 PM EDT',
+    tracks: [
+      {
+        name: 'Networking Break',
+        subtitle: 'Join us in our regional breakout rooms to network.',
       }
     ]
   },
   {
-    time: '10:00 AM',
+    time: '1:00 PM - 1:45 PM EDT',
     tracks: [
       {
-        name: 'The Ingredients of a Practical Course on ML at Scale for the Modern Data Scientist',
-        location: 'Hall #1, Odette Building',
-        speaker: _.find(speakers, {id: 'karthik'})
+        name: _.find(speakers, {id: 'somaiehnikpoor'}),
+        tag: _.find(speakers, {id: 'somaiehnikpoor'}),
+        speaker: _.find(speakers, {id: 'somaiehnikpoor'}),
+        description:_.find(speakers, {id: 'somaiehnikpoor'})
       },
       {
-        name: 'Actions on Google',
-        location: 'Hall #2, Odette Building',
-        speaker: _.find(speakers, {id: 'kyle'})
+        name: _.find(speakers, {id: 'godfreynolan'}),
+        tag:  _.find(speakers, {id: 'godfreynolan'}),
+        speaker: _.find(speakers, {id: 'godfreynolan'}),
+        description:_.find(speakers, {id: 'godfreynolan'})
       },
       {
-        name: 'Agile AI Testing',
-        location: 'Hall #3, Odette Building',
-        speaker: _.find(speakers, {id: 'godfrey'})
+        name: _.find(speakers, {id: 'rickross'}),
+        tag:  _.find(speakers, {id: 'rickross'}),
+        speaker: _.find(speakers, {id: 'rickross'}),
+        description:_.find(speakers, {id: 'rickross'})
       },
       {
-        name: 'The State of CyberSecurity Today',
-        location: 'Hall #4, Odette Building',
-        speaker: _.find(speakers, {id: 'brian'})
+        name: _.find(speakers, {id: 'frankabbruzzese'}),
+        tag:  _.find(speakers, {id: 'frankabbruzzese'}),
+        speaker: _.find(speakers, {id: 'frankabbruzzese'}),
+        description:_.find(speakers, {id: 'frankabbruzzese'})
+      },
+      {
+        name: _.find(speakers, {id: 'ashitaprasad'}),
+        tag:  _.find(speakers, {id: 'ashitaprasad'}),
+        speaker: _.find(speakers, {id: 'ashitaprasad'}),
+        description:_.find(speakers, {id: 'ashitaprasad'})
+      },
+    ]
+  },
+  {
+    time: '1:45 PM - 2:00 PM EDT',
+    tracks: [
+      {
+        name: 'Networking Break',
+        subtitle: 'Join us in our regional breakout rooms to network.',
       }
     ]
   },
   {
-    time: '11:00 AM',
+    time: '2:00 PM - 2:45 PM EDT',
     tracks: [
       {
-        name: 'Production-Grade ML for Real-world Business Problems',
-        location: 'Hall #1, Odette Building',
-        speaker: _.find(speakers, {id: 'harish'})
+        name: _.find(speakers, {id: 'kanchanapatlolla'}),
+        tag: _.find(speakers, {id: 'kanchanapatlolla'}),
+        speaker: _.find(speakers, {id: 'kanchanapatlolla'}),
+        description:_.find(speakers, {id: 'kanchanapatlolla'})
       },
       {
-        name: 'An Overview of Firebase',
-        location: 'Hall #2, Odette Building',
-        speaker: _.find(speakers, {id: 'sumit'})
+        name: _.find(speakers, {id: 'dansullivan'}),
+        tag:  _.find(speakers, {id: 'dansullivan'}),
+        speaker: _.find(speakers, {id: 'dansullivan'}),
+        description:_.find(speakers, {id: 'dansullivan'})
       },
       {
-        name: 'Talk 2.3',
-        location: 'Hall #3, Odette Building',
-        speaker: _.find(speakers, {id: 'gaurav'})
+        name: _.find(speakers, {id: 'brycehowitson'}),
+        tag:  _.find(speakers, {id: 'brycehowitson'}),
+        speaker: _.find(speakers, {id: 'brycehowitson'}),
+        description:_.find(speakers, {id: 'brycehowitson'})
       },
       {
-        name: 'Talk 2.4',
-        location: 'Hall #4, Odette Building',
-        speaker: _.find(speakers, {id: 'mark'})
+        name: _.find(speakers, {id: 'hassanhodges'}),
+        tag:  _.find(speakers, {id: 'hassanhodges'}),
+        speaker: _.find(speakers, {id: 'hassanhodges'}),
+        description:_.find(speakers, {id: 'hassanhodges'})
+      },
+      {
+        name: _.find(speakers, {id: 'chrisdemars'}),
+        tag:  _.find(speakers, {id: 'chrisdemars'}),
+        speaker: _.find(speakers, {id: 'chrisdemars'}),
+        description:_.find(speakers, {id: 'chrisdemars'})
+      },
+    ]
+  },
+  {
+    time: '2:45 PM - 3:00 PM EDT',
+    tracks: [
+      {
+        name: 'Networking Break',
+        subtitle: 'Join us in our regional breakout rooms to network.',
       }
     ]
   },
   {
-    time: '12:00 PM',
+    time: '3:00 PM - 3:45 PM EDT',
     tracks: [
       {
-        name: 'Lunch',
-        location: 'Main Lobby, Odette Building',
+        name: _.find(speakers, {id: 'scottseighman'}),
+        tag: _.find(speakers, {id: 'scottseighman'}),
+        speaker: _.find(speakers, {id: 'scottseighman'}),
+        description:_.find(speakers, {id: 'scottseighman'})
+      },
+      {
+        name: _.find(speakers, {id: 'ashleynewton'}),
+        tag:  _.find(speakers, {id: 'ashleynewton'}),
+        speaker: _.find(speakers, {id: 'ashleynewton'}),
+        description:_.find(speakers, {id: 'ashleynewton'})
+      },
+      {
+        name: _.find(speakers, {id: 'faisalabid'}),
+        tag:  _.find(speakers, {id: 'faisalabid'}),
+        speaker: _.find(speakers, {id: 'faisalabid'}),
+        description:_.find(speakers, {id: 'faisalabid'})
+      },
+      {
+        name: _.find(speakers, {id: 'scottstoll'}),
+        tag: _.find(speakers, {id: 'scottstoll'}),
+        speaker: _.find(speakers, {id: 'scottstoll'}),
+        description:_.find(speakers, {id: 'scottstoll'})
+      },
+      {
+        name: 'AI Ethics and Explainability Panel Discussion led by Ali El-Sharif',
+        subtitle:  'Join us for a Machine Panel to discuss the current challenges in ML.',
+      },
+    ]
+  },
+  {
+    time: '3:45 PM - 4:00 PM EDT',
+    tracks: [
+      {
+        name: 'Networking Break',
+        subtitle: 'Join us in our regional breakout rooms to network.',
       }
     ]
   },
   {
-    time: '12:30 PM',
+    time: '4:00 PM - 4:45 PM EDT',
     tracks: [
       {
-        name: 'Sponsor Session',
-        location: 'Hall #1, Odette Building',
+        name: _.find(speakers, {id: 'sherinmathews'}),
+        tag: _.find(speakers, {id: 'sherinmathews'}),
+        speaker: _.find(speakers, {id: 'sherinmathews'}),
+        description:_.find(speakers, {id: 'sherinmathews'})
       },
       {
-        name: 'Sponsor Session',
-        location: 'Hall #2, Odette Building',
+        name: _.find(speakers, {id: 'elrayahyassir'}),
+        tag:  _.find(speakers, {id: 'elrayahyassir'}),
+        speaker: _.find(speakers, {id: 'elrayahyassir'}),
+        description:_.find(speakers, {id: 'elrayahyassir'})
       },
       {
-        name: 'Sponsor Session',
-        location: 'Hall #3, Odette Building',
+        name: _.find(speakers, {id: 'medhaparlikar'}),
+        tag:  _.find(speakers, {id: 'medhaparlikar'}),
+        speaker: _.find(speakers, {id: 'medhaparlikar'}),
+        description:_.find(speakers, {id: 'medhaparlikar'})
       },
       {
-        name: 'Sponsor Session',
-        location: 'Hall #4, Odette Building',
-      }
+        name: _.find(speakers, {id: 'navsingh'}),
+        tag:  _.find(speakers, {id: 'navsingh'}),
+        speaker: _.find(speakers, {id: 'navsingh'}),
+        description:_.find(speakers, {id: 'navsingh'})
+      },
+      {
+        name: 'Software Development Panel led by Don Ward',
+        subtitle:  'Join us for a panel discussion to discuss the current challenges Software Developers face.',
+      },
     ]
   },
   {
-    time: '1:00 PM',
+    time: '4:45 PM - 5:00 PM EDT',
     tracks: [
       {
-        name: 'Introducing Tensorflow Ruby API',
-        location: 'Hall #1, Odette Building',
-        speaker: _.find(speakers, {id: 'arafat'})
-      },
-      {
-        name: 'Containers, Kubernetes, and the Multi-cloud journey',
-        location: 'Hall #2, Odette Building',
-        speaker: _.find(speakers, {id: 'gary'})
-      },
-      {
-        name: 'Talk 3.3',
-        location: 'Hall #3, Odette Building',
-        speaker: _.find(speakers, {id: 'ikjot'})
-      },
-      {
-        name: 'Get to Know & Get Plugged into the Windsor-Essex Tech Scene',
-        location: 'Hall #4, Odette Building',
-        speaker: _.find(speakers, {id: 'yvonne'})
+        name: 'Closing',
+        // location: 'Main Lobby',
+        subtitle: 'Closing Remarks',
       }
     ]
   },
-  {
-    time: '2:00 PM',
-    tracks: [
-      {
-        name: 'Talk 4.1',
-        location: 'Hall #1, Odette Building',
-        speaker: _.find(speakers, {id: 'annie'})
-      },
-      {
-        name: 'Progressive Web',
-        location: 'Hall #2, Odette Building',
-        speaker: _.find(speakers, {id: 'kyle'})
-      },
-      {
-        name: 'OOP VS Dopamine Lead Programming',
-        location: 'Hall #3, Odette Building',
-        speaker: _.find(speakers, {id: 'christa'})
-      },
-      {
-        name: 'The Mental Health Code',
-        location: 'Hall #4, Odette Building',
-        speaker: _.find(speakers, {id: 'jeannette'})
-      }
-    ]
-  },
-  {
-    time: '3:00 PM',
-    tracks: [
-      {
-        name: 'Feature Reduction Based on Performance and Cost',
-        location: 'Hall #1, Odette Building',
-        speaker: _.find(speakers, {id: 'richard'})
-      },
-      {
-        name: 'Progressive Web',
-        location: 'Hall #2, Odette Building',
-        speaker: _.find(speakers, {id: 'shawn'})
-      },
-      {
-        name: 'No Math, No Code, No Problem. Explaining Machine Learning to a Business Audience',
-        location: 'Hall #3, Odette Building',
-        speaker: _.find(speakers, {id: 'ali'})
-      },
-      {
-        name: 'Flutter for Web',
-        location: 'Hall #4, Odette Building',
-        speaker: _.find(speakers, {id: 'don'})
-      }
-    ]
-  },
-  {
-    time: '4:00 PM',
-    tracks: [
-      {
-        name: 'Wrap Up',
-        location: 'Hall #1, Odette Building',
-      }
-    ]
-  },
+  
 ]

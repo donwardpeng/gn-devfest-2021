@@ -1,6 +1,6 @@
 <template>
   <v-layout column>
-    <h1 class="display-2 mb-2">Team</h1>
+    <h1 class="display-2 mb-2">The Organizing Team</h1>
     
 
     <v-container grid-list-md >
@@ -41,16 +41,73 @@
 </template>
 
 <script>
-  import manan from '../static/team/manan.jpg'
   import don from '../static/team/don.png'
   import ali from '../static/team/ali.png'
-  import joshua from '../static/team/joshua.png'
-  import austin from '../static/team/austin.jpg'
-  import ron from '../static/team/ron_mckenzie.png'
+  import shaun from '../static/team/shaun.png'
+  import dave from '../static/team/dave.png'
+  import sam from '../static/team/sam.jpg'
+  import aislyn from '../static/team/aislyn.jpg'
+
+
   export default {
     data: () => ({
       speakers: [
         {
+          name: 'Shaun Dass',
+          image: shaun,
+          description: 'Shaun has spent over 25 years in IT. With varying roles that included Compuware, Fiserv and Bell Canada for the first half and over ten years as an adjunct professor at the University of Windsor and most recently The Zekelman School of Business and Information Technology at St. Clair College. He has also co-founded a small tech firm, Diaberg Transformation and spends his free time organizing tech community events through various boards he is involved with.',
+          socials: {
+            // facebook: 'https://facebook.com/ali.elsharif.969',
+            // twitter: 'https://twitter.com/elsharifali',
+            // github: 'https://github.com/elsharifali',
+            linkedin: 'https://www.linkedin.com/in/shaun-dass-48b8b6181/'
+          }
+        },
+        {
+          name: 'Ali El-Sharif',
+          image: ali,
+          description: 'Ali is a Ph.D. candidate at Nova Southeastern University, conducting research in Machine Learning interpretability.  He is a steering committee member of the Toronto based Aggregate Intellect where he hosts fellow researchers and practitioners discussing Machine Learning interpretability.  Ali enjoys volunteering for GDG Windsor.',
+          socials: {
+            // facebook: 'https://facebook.com/ali.elsharif.969',
+            // twitter: 'https://twitter.com/elsharifali',
+            // github: 'https://github.com/elsharifali',
+            linkedin: 'https://www.linkedin.com/in/elsharifali'
+          }
+        },
+        {
+          name: 'Sam Ghasan',
+          image: sam,
+          description: 'Sam is an Information Technology professional with 15+ years’ experience in the solution and infrastructure architecture, engineering and design, translating business requirements into technical solutions and team leadership through working with large global organizations such as Hewlett Packard, General Motors, Proctor and Gamble, Deutsche Bank, Ally Financial and Flagstar Bank. Sam has a Master’s degree in Information Technology Management and a second master’s degree in electrical engineering and throughout his careers has helped businesses achieve higher performance efficiencies, lower costs and maintain compliance by identifying opportunities for process improvement or cost reduction or avoidance, establishing environment standards and enforcing security standards.',
+          socials: {
+            // facebook: 'https://facebook.com/ali.elsharif.969',
+            // twitter: 'https://twitter.com/elsharifali',
+            // github: 'https://github.com/elsharifali',
+            linkedin: 'https://www.linkedin.com/in/sam-ghasan-00173624/'
+          }
+        },
+        {
+          name: 'Aislyn Lewis-Laurent',
+          image: aislyn,
+          description: 'Aislyn is Windsor\'s Women Techmaker Ambassador and leader of the University of Windsor Developer Student Club. She\'s also an undergraduate student working toward a double major in Biochemistry and Computer Science. Currently she\'s working as a research assistant developing data analytics software and machine learning algorithms after completing projects on both quantum computing and chemical simulations. Aislyn is passionate about research and is looking forward to a career in Bioinformatics or Computational Chemistry.',
+          socials: {
+            // facebook: 'https://facebook.com/ali.elsharif.969',
+            // twitter: 'https://twitter.com/elsharifali',
+            // github: 'https://github.com/elsharifali',
+            linkedin: 'https://www.linkedin.com/in/aislynlaurent/'
+          }
+        },
+        {
+          name: 'Dave Koziol',
+          image: dave,
+          description: 'Dave Koziol is one of the co-organizers of GDG Ann Arbor, as well as a co-organizers of other groups included Mobile Monday, CocoaHeads and Detroit Machine Learning. His day job is founder and owner of Arbormoon Software, Inc, the premier mobile consulting company in Ann Arbor, MI. Apps he and his team have worked on have been featured in the Apple, Amazon and Google app stores, and been ranked in the top 5 of their categories a half dozen times.',
+          socials: {
+            // facebook: 'https://facebook.com/ali.elsharif.969',
+            // twitter: 'https://twitter.com/elsharifali',
+            // github: 'https://github.com/elsharifali',
+            linkedin: 'https://www.linkedin.com/in/davekoziol/'
+          }
+        },  
+                {
           name: 'Don Ward',
           image: don,
           description: 'Don Ward currently helps lead the Detroit and Windsor Google Developers Groups. An avid technologist, he enjoys hosting software developer events as well as networking within the local software development community. During the day, Don works at Quicken Loans in downtown Detroit.',
@@ -61,60 +118,7 @@
             linkedin: 'https://www.linkedin.com/in/donwardpeng/'
           }
         },
-        {
-          name: 'Ali El-Sharif',
-          image: ali,
-          description: 'Ali El-Sharif lives in Windsor and works as a Business Intelligence Consultant for Motifworks in metro Detroit.  Ali is a Ph.D. candidate at Nova Southeastern University, conducting research in Machine Learning interpretability.',
-          socials: {
-            facebook: 'https://facebook.com/ali.elsharif.969',
-            twitter: 'https://twitter.com/elsharifali',
-            github: 'https://github.com/elsharifali',
-            linkedin: 'https://www.linkedin.com/in/elsharifali'
-          }
-        },
-        {
-          name: 'Manan Jadhav',
-          image: manan,
-          description: 'Manan is a graduate student at the University of Windsor. He is also the founder of an online animated video maker service, MotionDen Inc. Manan was previously an organiser at GDG Baroda, and loves building and getting invloved in local communities.',
-          socials: {
-            facebook: 'https://www.facebook.com/jadhavmanan',
-            twitter: 'https://twitter.com/curosmj',
-            github: 'https://github.com/curosmj',
-            linkedin: 'https://www.linkedin.com/in/curosmj/'
-          }
-        },
-        {
-          name: 'Ron McKenzie',
-          image: ron,
-          description: 'Ron McKenzie has been teaching Computer Science for 24 years, the last 16 of which have been at Vincent Massey. He enjoys creating and supporting groups and communities including Toastmasters, Debate, Computer Club, CodeReach, MasseyHacks, and ANS/CCP.',
-          socials: {
-            facebook: 'https://www.facebook.com/ron.mckenzie.397',
-            // twitter: 'https://twitter.com/jgehl99',
-            github: 'https://github.com/mss-mckenzie',
-            linkedin: 'https://ca.linkedin.com/in/ron-mckenzie-13357744'
-          }
-        },
-        {
-          name: 'Joshua Gehl',
-          image: joshua,
-          description: 'Joshua Gehl is an undergraduate computer science student at the University of WIndsor. He enjoys programming as a hobby and also as a career. Josh has competed in various programming competitions and has placed 1st. Josh wants to help make a difference in others’ lives through engagement with the community.',
-          socials: {
-            facebook: 'https://www.facebook.com/jgehl99',
-            twitter: 'https://twitter.com/jgehl99',
-            github: 'https://github.com/jgehl99',
-            linkedin: 'https://www.linkedin.com/in/joshua-gehl-b00513171/'
-          }
-        },
-        {
-          name: 'Austin Formagin',
-          image: austin,
-          description: 'Austin Formagin is an undergraduate Computer Science student at the University of Windsor. Austin currently mentors a group of students on an FRC team in Chatham, Ontario, teaching the students the basics of programming competition robots. He looks forward to introducing the importance of STEM to his community.',
-          socials: {
-            github: 'https://github.com/auti117',
-            linkedin: 'https://www.linkedin.com/in/austin-formagin-551b50171/',
-            twitter: 'https://twitter.com/AustinFormagin'
-          }
-        }
+      
       ]
     })
   }

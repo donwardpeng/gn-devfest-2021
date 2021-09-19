@@ -1,10 +1,8 @@
 <template>
   <v-layout column>
-    <h1 class="display-2 mb-2">Main Event Schedule</h1>
-    <p class="mb-10">Stay tuned as we update our schedule or add new sessions!</p>
-    <h3>Oct. 5, 2019</h3>
-    <h3>Odette Building, University of Windsor</h3>
-    <a href="/schedule/high-school-track">Looking for High School track schedule?</a>
+    <h1 class="display-2 mb-2">Great North DevFest Schedule</h1>
+    <h2>Saturday, October 17, 2020 - 11:30am to 4:45pm EDT</h2>
+    <h3>PLEASE NOTE: All times are in EDT</h3>
     <br />
     <v-timeline align-top dense>
       <v-timeline-item
@@ -16,25 +14,25 @@
               <v-flex xs12 md12 class="mb-4">
                 <strong class="headline">{{session.time}}</strong>
               </v-flex>
-              <v-flex class="pr-3" xs12 md3 v-for="track in session.tracks" :key="track.name">
-                <strong class="headline">{{track.name}}</strong>
-                <div class="subheading mt-2 mb-2" v-if="track.speaker">
+              <v-flex class="pr-3" xs12 md4 v-for="track in session.tracks" :key="track.name">
+                <strong class="headline" v-if="!track.speaker">{{track.name}}</strong><p>
+                <strong class="headline" v-if="track.speaker">
+                  <div class="headline mt-2 mb-2" v-if="track.speaker">
                   <a @click="select(track.speaker)">
-                    <i class="fas fa-chalkboard-teacher"></i> {{track.speaker.name}}
+                    {{track.speaker.sessionTitle}} by {{track.speaker.name}}
                   </a>
                 </div>
-                <div class="subheading mt-2 mb-2" v-if="track.location">
-                  <i class="fas fa-map-marker-alt"></i> {{track.location}}
-                </div>
-                <!-- <div class="body-1 mb-2">
-                  {{session.description}}
-                </div> -->
-                <!-- <v-avatar v-for="(img, i) in track.avatars" :key="i">
+                  </strong>
+                <strong class="subheading">{{track.subtitle}}</strong>
+                <v-avatar v-for="(img, i) in track.avatars" :key="i">
                   <v-img :src="img"></v-img>
-                </v-avatar> -->
+                </v-avatar>
                 <v-avatar v-if="track.speaker" >
                   <v-img style="cursor: pointer;" :src="track.speaker.image" @click="select(track.speaker)"></v-img>
                 </v-avatar>
+                <div class="subheading mt-2 mb-2" v-if="track.tag">
+                  <i class="fas fa-tag"></i> {{track.speaker.tags}}
+                </div>
               </v-flex>
             </v-layout>
       </v-timeline-item>
@@ -47,15 +45,20 @@
           </v-flex>
           <v-flex xs9>
             <v-card-text>
-              <p class="display-1">
-                <span v-html="speaker.name"></span>
-              </p>
-              <p class="title">
-                <span v-html="speaker.title"></span>
-              </p>
-              <p class="body-1">
-                <span v-html="speaker.description"></span>
-              </p>
+              <v-card-title class="headline grey lighten-2" primary-title v-if="speaker.sessionTitle">
+                    {{speaker.sessionTitle}} by 
+                    {{speaker.name}}
+                  </v-card-title>
+             <v-card-title class="headline grey lighten-2" primary-title v-else>
+                    {{speaker.name}}
+             </v-card-title>
+                    <p class="body-1">
+                      <span v-html="speaker.session"></span>
+                    </p>
+                    <p class="body-1">
+                      <span v-html="speaker.description"></span>
+                    </p>
+                  </v-card-text>
             </v-card-text>
           </v-flex>
         </v-layout>
@@ -77,19 +80,19 @@
   </v-layout>
 </template>
 <script>
-  import sessions from '../../data/schedule-main-event'
+import sessions from "../../data/schedule-main-event";
 
-  export default {
-    data: () => ({
-      sessions,
-      dialog: false,
-      speaker: {}
-    }),
-    methods: {
-      select (speaker) {
-        this.speaker = speaker
-        this.dialog = true
-      }
-    }
-  }
+export default {
+  data: () => ({
+    sessions,
+    dialog: false,
+    speaker: {},
+  }),
+  methods: {
+    select(speaker) {
+      this.speaker = speaker;
+      this.dialog = true;
+    },
+  },
+};
 </script>

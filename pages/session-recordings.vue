@@ -1,11 +1,12 @@
 <template>
   <v-layout column>
-    <h1 class="display-2 mb-2">Meet our Speakers</h1>
+    <h1 class="display-2 mb-2">Session Recordings</h1>
+    <h2 class="headline mb-2">Check out <a href="https://www.youtube.com/channel/UCkO23PzBIZlz_0OL8wKg3zg/">The Great North DevFest YouTube Channel</a> with all of the Sessions!</h2>
 
     <v-container grid-list-md>
       <v-layout row wrap>
-        <v-flex xs12 md6 v-for="(speaker, i) in speakers" :key="i">
-          <v-card class="mb-4" height="100%">
+        <v-flex xs12 md6 v-for="(speaker, i) in speakersWithSessionRecordings" :key="i" v->
+          <v-card class="mb-4" height="100%" v-show="speaker.sessionRecording" >
             <v-col>
               <!-- <v-flex xs4> -->
               <v-img :src="speaker.image" height="300px" width="400px"></v-img>
@@ -35,9 +36,8 @@
               </v-btn>
               <v-dialog v-model="dialog" width="600">
                 <template v-slot:activator="{ on }">
-                  <v-btn color="blue lighten-2" dark v-on="on">Session Details</v-btn>
+                  <v-btn color="blue lighten-2" dark v-on="on">Session Info</v-btn>
                 </template>
-
                 <v-card>
                   <v-card-title class="headline grey lighten-2" primary-title v-if="speaker.sessionTitle">
                     {{speaker.sessionTitle}} by 
@@ -64,7 +64,11 @@
                   </v-card-actions> -->
                 </v-card>
               </v-dialog>
+              <v-btn color="blue lighten-2" class="mx-3" dark :href="speaker.sessionRecording">Session Recording</v-btn>
+
             </v-card-actions>
+            
+
           </v-card>
         </v-flex>
       </v-layout>
@@ -77,6 +81,13 @@ import speakers from '../data/speakers'
 export default {
   data: () => ({
     speakers
-  })
+  }),
+  computed:{
+  speakersWithSessionRecordings: function() {
+    return this.speakers.filter(function(item) {
+      return item.sessionRecording;
+    })
+  }
+}
 }
 </script>
