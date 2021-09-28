@@ -8,11 +8,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'GDG Windsor DevFest 2019',
+    title: 'Great North DevFest 2021',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Buy your tickets now!' }
+      { hid: 'description', name: 'description', content: 'Call for Speakers Open Now!' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

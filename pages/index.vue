@@ -6,32 +6,32 @@
           <img class="responsive" src="devfest_2021.png" style="padding: 10px; width: 100%;" />
         </v-card>
       </v-flex>
-      <v-flex xs12 md122>
-      <v-card class="justify-center">
-        <v-card-text class="text-center">
-          <p class="display-1">Online and Free!</p>
-          <p class="display-1">Saturday, November 13, 2021</p>
+      <v-flex xs12 md7>
+      <v-card>
+        <v-card-text>
           <p class="headline">What is the Great North DevFest?</p>
           <p class="subheading">Google Developer Groups across Canada are excited to work together to host the 2nd
             annual Great North DevFest on Saturday, November 13, 2021. DevFests are Google sponsored software developer
             conferences that allow the local software development community to come together to network and learn about
-            the coolest new technology out there. <br/><br/>The 2nd annual Great North DevFest is an opportunity for tech
-            minded folk across Canada to learn and share about Canadian entrepreneurialism from Canadian technologists.
+            the coolest new technology out there. <br/><br/>The 2nd annual Great North DevFest is an opportunity for
+            tech-minded folk across Canada to learn and share about Canadian entrepreneurialism from Canadian technologists.
+
           </p>
-          <p class="headline">Check back often as we will open our call for speakers soon!</p>
+          <p class="headline">The Great North DevFest is excited to host sessions in both French and English.
+            Interested in presenting at the Great North DevFest? Please submit your idea
+            <a href="https://sessionize.com/great-north-devfest-2021/">here!</a></p>
         </v-card-text>
-         <v-img
-        height="300px"
-        src="gdg.png"></v-img>
-        <v-card-actions>
-          <!-- <v-btn icon flat color="primary">
-            <v-icon >share</v-icon>
-          </v-btn> -->
-          <!-- <v-btn color="primary" @click="openSubscriptionPopup">
-            Subscribe to updates
-          </v-btn> -->
-        </v-card-actions>
       </v-card>
+      </v-flex>
+      <v-flex xs12 md5>
+      <v-card>
+        <v-card-text>
+          <p class="headline">When: Sat, Nov 13, 2021</p>
+          <p class="headline">Where: Online</p>
+          <p class="headline">Cost: Free</p>
+          </v-card-text>
+       <v-img style="vertical-align: center" src="gdg.png"></v-img>
+        </v-card>
     </v-flex>
       <!-- <v-flex xs12 md4>
       <v-card>

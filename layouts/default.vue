@@ -57,9 +57,9 @@
       <v-menu  class="hidden-md-and-up">
         <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
         <v-list>
-          <v-list-tile :to="'/schedule/main-event'">
-              <v-list-tile-title>Schedule: Main Event</v-list-tile-title>
-          </v-list-tile>
+<!--          <v-list-tile :to="'/schedule/main-event'">-->
+<!--              <v-list-tile-title>Schedule: Main Event</v-list-tile-title>-->
+<!--          </v-list-tile>-->
 <!--          <v-list-tile :to="'/schedule/high-school-track'">-->
 <!--            <v-list-tile-title>Schedule: High School Track</v-list-tile-title>-->
 <!--          </v-list-tile>-->
@@ -115,7 +115,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="primary darken-2">
-        &copy;2019 — <strong>GDG Windsor</strong>
+        &copy;2021 — <strong>Great North DevFest</strong>
       </v-card-text>
     </v-card>
     </v-footer>
@@ -179,6 +179,10 @@ export default {
         {
           title: '2020 Session Recordings',
           href: 'https://www.youtube.com/channel/UCkO23PzBIZlz_0OL8wKg3zg'
+        },
+        {
+          title: 'Call for Speakers',
+          href: 'https://sessionize.com/great-north-devfest-2021/'
         }
         // {
         //   title: 'Get your ticket now!',

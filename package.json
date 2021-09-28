@@ -2,7 +2,7 @@
   "name": "event-website",
   "version": "1.0.0",
   "description": "",
-  "author": "Manan Jadhav",
+  "author": "Don Ward",
   "private": true,
   "scripts": {
     "dev": "nuxt",
