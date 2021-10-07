@@ -1,8 +1,6 @@
 <template>
   <v-layout column>
     <h1 class="display-2 mb-2">The Organizing Team</h1>
-    
-
     <v-container grid-list-md >
       <v-layout row wrap>
         <v-flex xs12 md12 v-for="(speaker, i) in speakers" :key="i">
@@ -47,6 +45,7 @@
   import dave from '../static/team/dave.png'
   import sam from '../static/team/sam.jpg'
   import aislyn from '../static/team/aislyn.jpg'
+  import nav from '../static/team/nav.png'
 
 
   export default {
@@ -97,17 +96,17 @@
           }
         },
         {
-          name: 'Dave Koziol',
-          image: dave,
-          description: 'Dave Koziol is one of the co-organizers of GDG Ann Arbor, as well as a co-organizers of other groups included Mobile Monday, CocoaHeads and Detroit Machine Learning. His day job is founder and owner of Arbormoon Software, Inc, the premier mobile consulting company in Ann Arbor, MI. Apps he and his team have worked on have been featured in the Apple, Amazon and Google app stores, and been ranked in the top 5 of their categories a half dozen times.',
+          name: 'Navjot Singh',
+          image: nav,
+          description: 'Navjot is a Google Developer Expert for Android. He is also the Organizer at GDG Montreal. During the day he works as a Mobile Software Engineer at Manulife.',
           socials: {
             // facebook: 'https://facebook.com/ali.elsharif.969',
             // twitter: 'https://twitter.com/elsharifali',
             // github: 'https://github.com/elsharifali',
-            linkedin: 'https://www.linkedin.com/in/davekoziol/'
+            linkedin: 'https://www.linkedin.com/in/navczydev/'
           }
-        },  
-                {
+        },
+        {
           name: 'Don Ward',
           image: don,
           description: 'Don Ward currently helps lead the Detroit and Windsor Google Developers Groups. An avid technologist, he enjoys hosting software developer events as well as networking within the local software development community. During the day, Don works at Quicken Loans in downtown Detroit.',

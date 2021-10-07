@@ -1,38 +1,33 @@
 <template>
   <v-container grid-list-md>
     <v-layout row wrap>
-      <v-flex xs12 md12>
+      <v-flex xs12 md6 lg6>
+        <v-img contain src="Devfest_Save-the-Date.gif"/>
+      </v-flex>
+      <v-flex xs12 md6 lg6>
         <v-card>
-          <img class="responsive" src="devfest_2021.png" style="padding: 10px; width: 100%;" />
-        </v-card>
-      </v-flex>
-      <v-flex xs12 md7>
-      <v-card>
-        <v-card-text>
-          <p class="headline">What is the Great North DevFest?</p>
-          <p class="subheading">Google Developer Groups across Canada are excited to work together to host the 2nd
-            annual Great North DevFest on Saturday, November 13, 2021. DevFests are Google sponsored software developer
-            conferences that allow the local software development community to come together to network and learn about
-            the coolest new technology out there. <br/><br/>The 2nd annual Great North DevFest is an opportunity for
-            tech-minded folk across Canada to learn and share about Canadian entrepreneurialism from Canadian technologists.
-
-          </p>
-          <p class="headline">The Great North DevFest is excited to host sessions in both French and English.
-            Interested in presenting at the Great North DevFest? Please submit your idea
-            <a href="https://sessionize.com/great-north-devfest-2021/">here!</a></p>
-        </v-card-text>
-      </v-card>
-      </v-flex>
-      <v-flex xs12 md5>
-      <v-card>
-        <v-card-text>
-          <p class="headline">When: Sat, Nov 13, 2021</p>
-          <p class="headline">Where: Online</p>
-          <p class="headline">Cost: Free</p>
+          <v-card-text>
+            <p class="headline">What is the Great North DevFest?</p>
+            <p class="subheading">Google Developer Groups across Canada are excited to work together to host the 2nd
+              annual Great North DevFest. DevFests are Google sponsored software developer
+              conferences that allow the local software development community to come together to network and learn
+              about
+              the coolest new technology out there. <br/><br/>The 2nd annual Great North DevFest is an opportunity for
+              tech-minded folk across North America to geek out and share experiences.
+              <br/><br/>
+              We are currently looking for speakers! Interested in presenting at the Great North DevFest?
+              Please submit your idea
+              <a href="https://sessionize.com/great-north-devfest-2021/">here!</a>
+            </p>
+            <p class="headline">The Details</p>
+            <ul>
+              <li>When: Sat, Nov 13, 2021</li>
+              <li>Where: Online</li>
+              <li>Cost: Free</li>
+            </ul>
           </v-card-text>
-       <v-img style="vertical-align: center" src="gdg.png"></v-img>
         </v-card>
-    </v-flex>
+      </v-flex>
       <!-- <v-flex xs12 md4>
       <v-card>
         <v-card-text>
@@ -65,6 +60,7 @@
 .v-card {
   height: 100%;
 }
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
