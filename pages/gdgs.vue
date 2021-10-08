@@ -1,17 +1,23 @@
 <template>
   <v-layout column>
-    <h1 class="display-2 mb-2">GDG's collaborating to make this a success!</h1>
+    <v-footer height="auto">
+      <v-img contain src="devfest_2021.png" />
+    </v-footer>
+    <v-container>
+      <v-layout row wrap>
+        <v-card class="mb-12" width="100%">
+          <v-card-title class="display-1"
+            >GDG's collaborating to make this a success!</v-card-title
+          >
+        </v-card>
+      </v-layout>
+    </v-container>
     <v-container grid-list-md>
       <v-layout row wrap>
-        <v-flex xs12 md12  v-for="(gdg, i) in gdgs" :key="i">
-          <v-card :href="gdg.link" class="mb-4" height="95%">
-            <v-card-title class="headline">{{gdg.name}}</v-card-title>            
+        <v-flex xs12 md12 v-for="(gdg, i) in gdgs" :key="i">
+          <v-card :href="gdg.link" class="mb-4" height="80%">
+            <v-card-title class="headline">{{ gdg.name }}</v-card-title>
             <v-img :src="gdg.image"></v-img>
-            <v-card-text>
-              <p class="subheading">
-                <span v-html="gdg.description"></span>
-              </p>
-            </v-card-text>
           </v-card>
         </v-flex>
       </v-layout>
@@ -19,8 +25,9 @@
   </v-layout>
 </template>
 <script>
-import gdgwindsor from "../static/gdgs/GDG-Windsor.jpg"
-import gdgmontreal from "../static/gdgs/GDG-Montreal.png"
+import gdgwindsor from "../static/gdgs/GDG-Windsor.jpg";
+import gdgmontreal from "../static/gdgs/GDG-Montreal.png";
+import gdgyyc from "../static/gdgs/GDG-YYC.jpg";
 // import gdgedmonton from "../static/gdgs/GDG-Cloud-Edmonton.png"
 // import gfgcloudfredericton from "../static/gdgs/GDG-Cloud-Fredericton.png"
 // import gdgvictoria from "../static/gdgs/GDG-Victoria.png"
@@ -32,12 +39,11 @@ import gdgmontreal from "../static/gdgs/GDG-Montreal.png"
 export default {
   data: () => ({
     gdgs: [
-        {
-        name: "",
+      {
+        name: "GDG Windsor",
         image: gdgwindsor,
-        description:
-          '',
-        link:"https://www.meetup.com/GDG-Windsor/",
+        description: "",
+        link: "https://www.meetup.com/GDG-Windsor/",
       },
       // {
       //   name: "",
@@ -62,12 +68,18 @@ export default {
       //   link:"https://gdgedmonton.com/",
       // },
       {
-        name: "",
+        name: "GDG Montreal",
         image: gdgmontreal,
-        description:
-          '',
-        link:"https://gdgmontreal.com/",
+        description: "",
+        link: "https://gdgmontreal.com/",
       },
+      {
+        name: "GDG Cloud Calgary",
+        image: gdgyyc,
+        description: "",
+        link: "https://gdgyyc.com/",
+      },
+
       // {
       //   name: "",
       //   image: gdgrichmond,
@@ -96,8 +108,7 @@ export default {
       //     '',
       //   link:"https://www.meetup.com/GDG-Winnipeg/",
       // },
-
-    ]
-  })
+    ],
+  }),
 };
 </script>

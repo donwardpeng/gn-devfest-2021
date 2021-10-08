@@ -1,26 +1,35 @@
 <template>
   <v-app>
-    <v-toolbar dark dense color="#4285f4" elevation=10> 
-      <v-toolbar-title>
-        <router-link to="/" class="toolbar-title">{{ title }}</router-link>
-      </v-toolbar-title>
+    <v-toolbar dark dense color="#4285f4" elevation="10">
+      <v-toolbar-title class="toolbar-title">{{ title }} </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down" >
-      <v-btn
-        v-for="item in items"
-        :key="item.title"
-        :href="item.href"
-        :to="item.to"
-        flat
-      >
-        {{ item.title }}
-      </v-btn>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn
+          v-for="item in items"
+          :key="item.title"
+          :href="item.href"
+          :to="item.to"
+          flat
+        >
+          {{ item.title }}
+        </v-btn>
       </v-toolbar-items>
+      <v-menu class="hidden-md-and-up">
+        <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
+        <v-list>
+          <v-list-tile
+            v-for="item in items"
+            :key="item.title"
+            :href="item.href"
+            :to="item.to"
+          >
+            <v-list-tile-title> {{ item.title }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
     </v-toolbar>
     <v-main>
-      <v-footer height="auto">
-        <v-img contain src="devfest_2021.png" />
-      </v-footer>
+
       <v-content>
         <v-container>
           <nuxt />
@@ -71,10 +80,10 @@ export default {
       drawer: false,
       fixed: false,
       items: [
-        // {
-        //   title: 'Home',
-        //   to: '/'
-        // },
+        {
+          title: "Home",
+          to: "/",
+        },
         // {
         //   title: 'Schedule (Main Event)',
         //   to: '/schedule'
@@ -83,10 +92,10 @@ export default {
         //   title: 'Schedule (High School Track)',
         //   to: '/schedule'
         // },
-        // {
-        //   title: 'Speakers',
-        //   to: '/speakers'
-        // },
+        {
+          title: 'Speakers',
+          to: '/speakers'
+        },
         // {
         //   title: 'Register',
         //   to: '/tickets'

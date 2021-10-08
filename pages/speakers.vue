@@ -1,7 +1,16 @@
 <template>
-  <v-layout column>
-    <h1 class="display-2 mb-2">Meet our Speakers</h1>
-
+ <v-layout column>
+    <v-footer height="auto">
+      <v-img contain src="devfest_2021.png" />
+    </v-footer>
+    <v-container>
+      <v-layout row wrap>
+        <v-card class="mb-12" width="100%">
+          <v-card-title class="display-1">
+          Meet our Speakers!</v-card-title>
+        </v-card>
+      </v-layout>
+    </v-container>
     <v-container grid-list-md>
       <v-layout row wrap>
         <v-flex xs12 md6 v-for="(speaker, i) in speakers" :key="i">

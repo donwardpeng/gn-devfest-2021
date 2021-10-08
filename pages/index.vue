@@ -1,23 +1,30 @@
 <template>
   <v-container grid-list-md>
+    <v-footer height="auto">
+      <v-img contain src="devfest_2021.png" />
+    </v-footer>
     <v-layout row wrap>
       <v-flex xs12 md6 lg6>
-        <v-img contain src="Devfest_Save-the-Date.gif"/>
+        <v-img contain src="Devfest_Save-the-Date.gif" />
       </v-flex>
       <v-flex xs12 md6 lg6>
         <v-card>
           <v-card-text>
             <p class="headline">What is the Great North DevFest?</p>
-            <p class="subheading">Google Developer Groups across Canada are excited to work together to host the 2nd
-              annual Great North DevFest. DevFests are Google sponsored software developer
-              conferences that allow the local software development community to come together to network and learn
-              about
-              the coolest new technology out there. <br/><br/>The 2nd annual Great North DevFest is an opportunity for
-              tech-minded folk across North America to geek out and share experiences.
-              <br/><br/>
-              We are currently looking for speakers! Interested in presenting at the Great North DevFest?
-              Please submit your idea
-              <a href="https://sessionize.com/great-north-devfest-2021/">here!</a>
+            <p class="subheading">
+              Google Developer Groups across Canada are excited to work together
+              to host the 2nd annual Great North DevFest. DevFests are Google
+              sponsored software developer conferences that allow the local
+              software development community to come together to network and
+              learn about the coolest new technology out there. <br /><br />The
+              2nd annual Great North DevFest is an opportunity for tech-minded
+              folk across North America to geek out and share experiences.
+              <br /><br />
+              We are currently looking for speakers! Interested in presenting at
+              the Great North DevFest? Please submit your idea
+              <a href="https://sessionize.com/great-north-devfest-2021/"
+                >here!</a
+              >
             </p>
             <p class="headline">The Details</p>
             <ul>
