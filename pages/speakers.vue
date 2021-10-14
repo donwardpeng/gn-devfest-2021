@@ -1,59 +1,69 @@
 <template>
- <v-layout column>
+  <v-layout column>
     <v-footer height="auto">
       <v-img contain src="devfest_2021.png" />
     </v-footer>
     <v-container>
       <v-layout row wrap>
-        <v-card class="mb-12" width="100%">
-          <v-card-title class="display-1">
-          Meet our Speakers!</v-card-title>
+        <v-card class="mb-12" width="100% elevation=12">
+          <v-card-title class="display-1">Meet our Speakers!</v-card-title>
+          <v-card-title class="title"
+            >Check back often as we add more speakers daily :)</v-card-title
+          >
         </v-card>
       </v-layout>
     </v-container>
     <v-container grid-list-md>
       <v-layout row wrap>
         <v-flex xs12 md6 v-for="(speaker, i) in speakers" :key="i">
-          <v-card class="mb-4" height="100%">
+          <v-card class="mb-4" height="100%" elevation="12">
             <v-col>
-              <!-- <v-flex xs4> -->
               <v-img :src="speaker.image" height="300px" width="400px"></v-img>
-              <!-- </v-flex>
-              <v-flex xs8>-->
               <v-card-text>
-                <p class="display-1">
-                  <span v-html="speaker.name"></span>
-                </p>
                 <p class="title">
+                  <span v-html="speaker.name"></span>
+                  <br />
                   <span v-html="speaker.title"></span>
                 </p>
               </v-card-text>
-              <!-- </v-flex> -->
+              <v-card-actions class="pa-1">
+                <v-btn
+                  v-for="(link, platform) in speaker.socials"
+                  :key="link"
+                  class="mx-3"
+                  icon
+                  flat
+                  :href="link"
+                >
+                  <v-icon size="24px">fab fa-{{ platform }}</v-icon>
+                </v-btn>
+              </v-card-actions>
             </v-col>
+
             <v-divider light></v-divider>
             <v-card-actions class="pa-3">
-              <v-btn
-                v-for="(link, platform) in speaker.socials"
-                :key="link"
-                class="mx-3"
-                icon
-                flat
-                :href="link"
-              >
-                <v-icon size="24px">fab fa-{{ platform }}</v-icon>
-              </v-btn>
               <v-dialog v-model="dialog" width="600">
                 <template v-slot:activator="{ on }">
-                  <v-btn color="blue lighten-2" dark v-on="on">Session Details</v-btn>
+                  <v-btn color="blue lighten-2" dark v-on="on" block
+                    >{{speaker.sessionTitle}}</v-btn
+                  >
                 </template>
 
                 <v-card>
-                  <v-card-title class="headline grey lighten-2" primary-title v-if="speaker.sessionTitle">
-                    {{speaker.sessionTitle}} by 
-                    {{speaker.name}}
+                  <v-card-title
+                    class="headline grey lighten-2"
+                    primary-title
+                    v-if="speaker.sessionTitle"
+                  >
+                    {{ speaker.sessionTitle }} by
+                    {{ speaker.name }}
                   </v-card-title>
-                  <v-card-title class="headline grey lighten-2" primary-title v-else>
-                    {{speaker.name}}
+                  <v-card-title
+                    class="headline grey lighten-2"
+                    primary-title
+                    v-else
+                  >
+                    {{ speaker.name }}
                   </v-card-title>
 
                   <v-card-text>
@@ -81,11 +91,11 @@
   </v-layout>
 </template>
 <script>
-import speakers from '../data/speakers'
+import speakers from "../data/speakers";
 
 export default {
   data: () => ({
-    speakers
-  })
-}
+    speakers,
+  }),
+};
 </script>

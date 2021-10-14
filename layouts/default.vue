@@ -95,11 +95,7 @@ export default {
         {
           title: 'Speakers',
           to: '/speakers'
-        },
-        // {
-        //   title: 'Register',
-        //   to: '/tickets'
-        // }
+          },
         // {
         //   title: 'Sponsors',
         //   href: '/sponsors'
@@ -124,10 +120,10 @@ export default {
           title: "Call for Speakers",
           href: "https://sessionize.com/great-north-devfest-2021/",
         },
-        // {
-        //   title: 'Get your ticket now!',
-        //   href: 'https://www.eventbrite.com/e/the-windsor-essex-google-developers-devfest-tickets-5488751002'
-        // }
+        {
+          title: 'Get your ticket now!',
+          href: 'https://gdg.community.dev/events/details/google-gdg-windsor-presents-great-north-devfest/'
+        }
       ],
       title: "Great North DevFest - November 13, 2021",
       gdglogo: "../static/gdg_small.png",

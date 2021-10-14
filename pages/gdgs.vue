@@ -33,7 +33,7 @@ import gdgyyc from "../static/gdgs/GDG-YYC.jpg";
 // import gdgvictoria from "../static/gdgs/GDG-Victoria.png"
 // import gdgtoronto from "../static/gdgs/GDG-Toronto.png"
 // import gdgwinnipeg from "../static/gdgs/GDG-Winnipeg.png"
-// import gdgrichmond from "../static/gdgs/GDG-Richmond.png"
+import gdgrichmond from "../static/gdgs/gdg-richmond.jpeg"
 // import gdgcloudthunderbay from "../static/gdgs/GDG-Cloud-Thunder-Bay.png"
 
 export default {
@@ -79,14 +79,13 @@ export default {
         description: "",
         link: "https://gdgyyc.com/",
       },
-
-      // {
-      //   name: "",
-      //   image: gdgrichmond,
-      //   description:
-      //     '',
-      //   link:"https://www.meetup.com/Google-Developers-Group-GDG-Richmond",
-      // },
+      {
+        name: "GDG Richmond",
+        image: gdgrichmond,
+        description:
+          '',
+        link:"https://gdg.community.dev/gdg-richmond/",
+      },
       // {
       //   name: "",
       //   image: gdgtoronto,
