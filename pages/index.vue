@@ -1,14 +1,16 @@
 <template>
   <v-container grid-list-md>
-    <v-footer height="auto">
+    <v-footer height="auto" elevation='12'>
       <v-img contain src="devfest_2021.png" />
     </v-footer>
     <v-layout row wrap>
       <v-flex xs12 md6 lg6>
-        <v-img contain src="Devfest_Save-the-Date.gif" />
+      <v-card elevation='12'>
+        <v-img contain src="GDGs_DevFest_2021.gif" />
+      </v-card>
       </v-flex>
       <v-flex xs12 md6 lg6>
-        <v-card>
+        <v-card elevation='12'>
           <v-card-text>
             <p class="headline">What is the Great North DevFest?</p>
             <p class="subheading">
@@ -20,6 +22,9 @@
               2nd annual Great North DevFest is an opportunity for tech-minded
               folk across North America to geek out and share experiences.
               <br /><br />
+              Interested in attending? 
+              <a href="https://gdg.community.dev/events/details/google-gdg-windsor-presents-great-north-devfest/"> Head over here to RSVP</a> 
+              <br /> <br />
               We are currently looking for speakers! Interested in presenting at
               the Great North DevFest? Please submit your idea
               <a href="https://sessionize.com/great-north-devfest-2021/"

@@ -7,6 +7,12 @@ import vasudev_maduri from "../static/speakers/Vasudev_Maduri.png";
 import dewan_ahmed from "../static/speakers/Dewan_Ahmed.jpg"
 import karan_balkar from "../static/speakers/Karan_Balkar.jpg"
 import chander_dhall from "../static/speakers/chander_dhall.jpg"
+import vivek_yadav from "../static/speakers/Vivek_Yadav.png"
+import marton_kodok from "../static/speakers/Marton_Kodok.png"
+import joe_birch from "../static/speakers/Joe_Birch.png"
+import guillaume_blaquiere from "../static/speakers/Guillaume_Blaquiere.png"
+import shubhra_sarker from "../static/speakers/Shubhra_Sarker.jpg"
+import frank_abbruzzese from "../static/speakers/Frank_Abbruzzese.jpg"
 export default [  
   {
     id: 'chander_dhall',
@@ -37,7 +43,23 @@ export default [
       twitter: "https://twitter.com/FaisalAbid",
       linkedin: "https://www.linkedin.com/in/faisalabid/"
     },
-    tags: 'Fushia',
+    tags: 'Mobile',
+  },
+  {
+    id: 'frank_abbruzzese',
+    name: "Frank Abbruzzese",
+    title:
+      "AlphaKOR, President",
+    image: frank_abbruzzese,
+    description:
+      "33 years in the IT sector providing network solutions, network security, web designs, digital marketing and custom software platforms.<p><p>Married to Carmela for 28 years, enjoys playing hockey, being a mentor, known as the connector and the networking king.<p><p>Entrepreneur of the Year 2012 and Tech Mentor of the Year 2017. AlphaKOR named Service Company 2009 and Mid-Size Company 2014.",
+    sessionTitle: "What's Your Cybersecurity Strategy?",
+    session: "Overview of Cybersecurity Strategies, tips and best practices. We will touch on working from home safely, working from the office and hybrid workforce.",
+    socials: {
+      // twitter: "https://twitter.com/FaisalAbid",
+      linkedin: "https://www.linkedin.com/in/frankabbruzzese/"
+    },
+    tags: 'CyberSecurity',
   },
   {
     id: 'dewan_ahmed',
@@ -53,7 +75,7 @@ export default [
       twitter: "https://twitter.com/DewanAhmed",
       linkedin: "https://www.linkedin.com/in/diahmed/"
     },
-    tags: ['Kubernetes','GitOps'],
+    tags: ['GitOps'],
   },
   {
     id: 'karan_balkar',
@@ -72,6 +94,37 @@ export default [
     tags: ['Google Assistant'],
   },
   {
+    id: 'joe_birch',
+    name: "Joe Birch",
+    title:
+      "Senior Engineer @ Buffer",
+    image: joe_birch,
+    description:
+      "Hi, my names Joe. I’m an Android Engineer and Google Developer Expert for Android, Google Pay and Flutter based in Brighton, UK working on the Android team at Buffer. I’m passionate about coding and love creating robust, polished and exciting projects for mobile, the web, TV, wearables and I’ll probably be toying with whatever the new thing is at the time you’re reading this – I love to be constantly learning. I’m also a keen writer as I love to share my learnings and experiences with others.",
+    sessionTitle: "Building Accessible Apps with Jetpack Compose",
+    session: "Did you know that 15% of the worlds population experience some form of disability? Yet even with this high number, accessibility is often an after thought for many projects - meaning that many of the things we build end up creating barriers for users who utilise accessibility features. With tools like Jetpack Compose, there is reduced friction in supporting these things in our apps - we just need to have the knowledge of how to implement them.<p><p>In this talk we’ll explore common accessibility pitfalls, along with how they can be tackled within Jetpack Compose. You’ll leave with the confidence and knowledge to make your apps more accessible for everyone!",
+    socials: {
+      twitter: "https://twitter.com/hitherejoe",
+      // linkedin: "https://www.linkedin.com/in/diahmed/"
+    },
+    tags: ['Mobile'],
+  },
+  {
+    id: 'guillaume_blaquiere',
+    name: "Guillaume Blaquiere",
+    title: "Lead Cloud Architect at Accenture",
+    image: guillaume_blaquiere,
+    description:
+    "Guillaume is a Google Developer Expert on Cloud Platform since 2019 and works at Accenture as Cloud Architect.<p><p>Java developer for more than 15 years, and despite positions of responsibilities, he has always kept his wish to create, develop, discover and test new solutions, especially in the Cloud, the machine learning or Python and Go language.<p><p>Innovation addict and Google Cloud 3x certified, writer and speaker in his free time, he's fascinated by the serverless solution and all the \"usual\" problems that it solves.",
+    sessionTitle: "Security in serverless compute on Google Cloud: take over the control of the infrastructure",
+    session: "Security is a common challenge for everyone. Standard and robust patterns exist and are known in traditional infrastructure. However, the serverless change the game and imply a false feeling of losing control, especially in the security part.<p><p>This session is focused on all the ways to secure the communication to and from serverless compute products on Google Cloud. The OAuth2 token generation and the difference of usage between access token and identity token, IAM service and the service/user accounts, VPC access and private networks access, load balancers, ingress and egress control will no longer have mysteries for you at the end of the session!",
+    socials: {
+      twitter: "https://twitter.com/gblaquiere",
+      linkedin: "https://www.linkedin.com/in/guillaume-blaquiere-38693b15/"
+    },
+    tags: ['GCP'],
+  },
+  {
     id: 'abhishek_doshu',
     name: "Abhishek Doshi",
     title:
@@ -85,7 +138,23 @@ export default [
       twitter: "https://twitter.com/AbhishekDoshi26",
       linkedin: "https://www.linkedin.com/in/abhishekdoshi26/"
     },
-    tags: 'Flutter',
+    tags: 'Mobile',
+  },
+  {
+    id: 'marton_kodok',
+    name: "Marton Kodok",
+    title:
+      "Google Developer Expert at REEA.net",
+    image: marton_kodok,
+    description:
+      "Márton is a Google Developer Expert(GDE) on Cloud, senior software architect at REEA.net . A romanian hero on StackOverflow with 190k reputation points. He led the implementation of complex and distributed systems serving millions of users for companies like FreeLogoServices, LogoMix, WaterSmart, Ausschreibungsdienste and many more.<p><p>Active contributor for open-source solutions like Beanstalkd console, and Riak admin interface. Expert in databases and systems like Google BigQuery, Elasticsearch, Redis.",
+    sessionTitle: "Cloud Workflows: What's new in serverless orchestration and automation",
+    session: "Join this session to understand how Cloud Workflows resolves challenges in connecting services, HTTP based service orchestration and automation. We are going to dive deep how serverless HTTP service automation works to automate step engines. Based on practical examples we will demonstrate the newest features that lets you automate the cloud and integration with any Google Cloud product without worrying about authentication.",
+    socials: {
+      twitter: "https://twitter.com/MartonKodok",
+      linkedin: "https://www.linkedin.com/in/pentium10/"
+    },
+    tags: 'GCP',
   },
   {
     id: 'vasudev_maduri',
@@ -137,6 +206,22 @@ export default [
     tags: 'UI/UX',
   },
   {
+    id: 'shubhra_sarker',
+    name: "Shubhra Sarker",
+    title:
+      "Software Engineer - Electronics Arts",
+    image: shubhra_sarker,
+    description:
+      "Shubhra Sarker is a master’s graduate from Simon Fraser University currently working as a Software Engineer at Electronic Arts. He completed his bachelor’s degree with the major of Computer Science and Engineering from Khulna University, Bangladesh.<p><p>He completed his MSc in Human-Computer Interaction (HCI) with an emphasis on Augmented Reality and Game Programming. He has expertise in AR/VR development, gameplay programming and computer vision.",
+    sessionTitle: "Creating Web AR applications with MediaPipe",
+    session: "In this session, we are going to discover the application of the Mediapipe SDK with a few Web AR projects.<p><p>The Mediapipe project by Google is a good starting point for beginners to try out different pre-trained ML models and use them in their own projects. It's a very powerful tool with so many possibilities. In our case, we are going to use this technology to develop Augmented Reality applications.",
+    socials: {
+      // twitter: "https://twitter.com/navczydev",
+      linkedin: "https://www.linkedin.com/in/ishubhra/"
+    },
+    tags: 'ML/AI',
+  },
+  {
     id: 'nav_singh',
     name: "Nav Singh",
     title:
@@ -150,6 +235,22 @@ export default [
       twitter: "https://twitter.com/navczydev",
       linkedin: "https://www.linkedin.com/in/navczydev/"
     },
-    tags: 'UI/UX',
+    tags: 'Mobile',
+  },
+  {
+    id: 'vivek_yadav',
+    name: "Vivek Yadav",
+    title:
+      "GDE Flutter & Dart",
+    image: vivek_yadav,
+    description:
+      "Hi, I am Vivek Yadav. I am Google Developer Expert for Flutter and Dart. I am working with ZestMoney as Senior Flutter Engineer. I have more than 4 years of experience with mobile development and related tech.<p><p>I am a community organizer of Flutter India, Flutter Mumbai, and the PROCoach community. I love to share things and help the community. I write blogs, produce video content to help the community. <p><p> Twitter, LinkedIn, Youtube, and discord are some platforms where I am always available to help.",
+    sessionTitle: "Show off with Platform Views",
+    session: "We know that flutter is still a young technology. We have a lot of packages. But what if something is missing. What if we want a view from the platform(android/ios). What if that is the main concern of the flutter app. (e.g. Google Maps, the camera is not purely a widget. It is a platform view)<p><p>Don’t worry. We have a solution. We can have any view from the platform to the flutter. Yes, we can convert a platform view to a flutter widget.<p><p>This is what we are going to see in this talk.<p><p>We will see how and where we can make use of platform views in the flutter. We will have a live coding session to implement the platform views.",
+    socials: {
+      twitter: "https://twitter.com/viveky259259",
+      linkedin: "https://www.linkedin.com/in/vivek-yadav-665823129"
+    },
+    tags: 'Mobile',
   },
 ]

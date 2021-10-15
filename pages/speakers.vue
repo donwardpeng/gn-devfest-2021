@@ -5,7 +5,7 @@
     </v-footer>
     <v-container>
       <v-layout row wrap>
-        <v-card class="mb-12" width="100% elevation=12">
+        <v-card class="mb-12" width="100%" elevation="12">
           <v-card-title class="display-1">Meet our Speakers!</v-card-title>
           <v-card-title class="title"
             >Check back often as we add more speakers daily :)</v-card-title
@@ -41,12 +41,17 @@
             </v-col>
 
             <v-divider light></v-divider>
-            <v-card-actions class="pa-3">
+            <v-card-text>
+              <p class="title">
+                <span v-html="speaker.sessionTitle"></span>
+              </p>
+            </v-card-text>
+            <v-card-actions>
               <v-dialog v-model="dialog" width="600">
                 <template v-slot:activator="{ on }">
-                  <v-btn color="blue lighten-2" dark v-on="on" block
-                    >{{speaker.sessionTitle}}</v-btn
-                  >
+                  <v-btn color="blue lighten-2" dark v-on="on">
+                    SESSION INFO
+                  </v-btn>
                 </template>
 
                 <v-card>

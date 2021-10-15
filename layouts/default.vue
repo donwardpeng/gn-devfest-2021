@@ -96,6 +96,11 @@ export default {
           title: 'Speakers',
           to: '/speakers'
           },
+        {
+          title: 'Sessions',
+          to: '/sessions'
+          },
+
         // {
         //   title: 'Sponsors',
         //   href: '/sponsors'
